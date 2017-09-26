@@ -1,0 +1,18 @@
+--- /srv/repository/drupal/sites/all/modules/oembed/oembedcore.module
++++ /srv/repository/drupal/sites/all/modules/oembed/oembedcore.module
+@@ -258,7 +258,14 @@
+     $matches = explode('.', $matches[1]);
+     $match_count = count($matches);
+     if ($match_count > 1) {
+-      return $matches[$match_count - 2] . '.' . $matches[$match_count - 1];
++
++	$return = "";
++        $index = $match_count;
++        while($index >= 1){
++            $return .= $matches[$match_count-$index];
++            $index--;
++        }	
++	return $return;
+     }
+     else {
+       return $matches[0];
