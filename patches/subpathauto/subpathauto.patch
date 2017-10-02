@@ -1,5 +1,5 @@
---- /srv/repository/drupal/sites/all/modules/subpathauto/subpathauto.module
-+++ /srv/repository/drupal/sites/all/modules/subpathauto/subpathauto.module
+--- /subpathauto.module
++++ /subpathauto.module
 @@ -22,6 +22,9 @@
  function subpathauto_url_inbound_alter(&$path, $original_path, $language) {
    // If the current menu item exists at this path, then we should not continue
