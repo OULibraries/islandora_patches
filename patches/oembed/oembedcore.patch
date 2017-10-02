@@ -1,5 +1,5 @@
---- /srv/repository/drupal/sites/all/modules/oembed/oembedcore.module
-+++ /srv/repository/drupal/sites/all/modules/oembed/oembedcore.module
+--- /oembedcore.module
++++ /oembedcore.module
 @@ -258,7 +258,14 @@
      $matches = explode('.', $matches[1]);
      $match_count = count($matches);
